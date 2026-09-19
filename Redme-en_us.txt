@@ -15,3 +15,4 @@ Put textures in the same location with your .blend file ， suggested format is 
 
 *io_mesh_w3d Nord Shader.zip ： Use blender to load this plugin , there would be features in material page , appoint blender material to shaders in game in w3d properties and type name of textures (such as xxx,xxx_NRM,xxx_SPM) , with no suffix
 Invert red channel of SPM texture , invert whole color of NRM texture , then make animations （if needed），to export models , choose Westwood W3D XML , the default option of lower button mostly used for making vehicle models that with no animations , if you wan to make animations , just export animations later
+Attention:FXcutDepthBuffer is used to hide ground rendering and show models lower than ground,this shader need to use for a cuboid or a cylinder,it can't bound with bone but can be set as a subobject of armature object
