@@ -15,3 +15,4 @@ NordLicht红色警戒3PBR着色器工具套件使用说明
 
 *io_mesh_w3d Nord Shader.zip：直接使用blender加载此插件，材质选项会出现相关选项，在右下角w3d properties指定blender材质在游戏内对应的材质类型，分别输入贴图的名称（如xxx，xxx_NRM，xxx_SPM）,不附带格式
 反转SPM贴图的红色通道，反转NRM贴图的颜色，随后进行后续动画工作（如必要），导出选择Westwood W3D XML，下面的默认选项多数用于制作不包含动画的载具模型，如包含动画也可以稍后单独导出动画
+注意：FXcutDepthBuffer用于隐藏地面的渲染以显示模型低于地面的部分，此shader需要指定给一个长方体或圆柱，不能有骨骼绑定但是可以设置父级物体
