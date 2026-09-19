@@ -1,0 +1,17 @@
+NordLicht红色警戒3PBR着色器工具套件使用说明
+注意：本套件于Github开放，并遵循原作者的MIT开源协议
+地址：https://github.com/2007UserT/custom-shaders-RedAlert3-toolkit
+文件说明：
+
+首先你需要一个完成建模，UV展开和材质指定的Blender模型，材质的名称即为导出贴图的名称
+
+*Compiled shaders fxo.zip：放进以下目录：[你mod的根目录/Additional/Shaders/Compiled]，并在modsdk内勾选“复制额外文件”
+
+*PBR Metallic RA 3 Custom Shader.spt：放到[文档/Adobe/Adobe Substance 3D Painter/assets/templates]
+使用此模板请先新建一个填充图层，只勾选Cast和Glow两个通道，并将Cast设置为0，Glow设置为1，最终计算时Cast通道为阵营色的位置，Glow通道反转后为发光强度（无需手动操作）
+
+*export-presets.zip：解压到[文档/Adobe/Adobe Substance 3D Painter/assets/export-presets]
+将贴图放在和模型的.blend文件同目录下，推荐格式为.tga
+
+*io_mesh_w3d Nord Shader.zip：直接使用blender加载此插件，材质选项会出现相关选项，在右下角w3d properties指定blender材质在游戏内对应的材质类型，分别输入贴图的名称（如xxx，xxx_NRM，xxx_SPM）,不附带格式
+反转SPM贴图的红色通道，反转NRM贴图的颜色，随后进行后续动画工作（如必要），导出选择Westwood W3D XML，下面的默认选项多数用于制作不包含动画的载具模型，如包含动画也可以稍后单独导出动画

@@ -1,0 +1,17 @@
+NordLicht Red Alert 3 PBR Shader Toolkit 
+ATTENTION ： this toolkit opened on GitHub and follow MIT Open Source Protocol of original author.
+url：https://github.com/2007UserT/custom-shaders-RedAlert3-toolkit
+File Explain ：
+
+Firstly you need a blender model that finished modeling and UV Unwarp , the name of your material would be the name of export textures.
+
+*Compiled shaders fxo.zip ： Put into：[your mod root/Additional/Shaders/Compiled]，and select "Copy additional files" in modsdk.
+
+*PBR Metallic RA 3 Custom Shader.spt ：Put into：[documents/Adobe/Adobe Substance 3D Painter/assets/templates]
+To use this template , create a fill overlay and select Cast and Glow two channels , and set Cast to 0，Glow to 1 , in final calculation , Cast channel is the position of in-game cast color , Glow is inverted emissive strength （no need to do it manually）
+
+*export-presets.zip ： Extract to[documents/Adobe/Adobe Substance 3D Painter/assets/export-presets]
+Put textures in the same location with your .blend file ， suggested format is .tga (Targa)
+
+*io_mesh_w3d Nord Shader.zip ： Use blender to load this plugin , there would be features in material page , appoint blender material to shaders in game in w3d properties and type name of textures (such as xxx,xxx_NRM,xxx_SPM) , with no suffix
+Invert red channel of SPM texture , invert whole color of NRM texture , then make animations （if needed），to export models , choose Westwood W3D XML , the default option of lower button mostly used for making vehicle models that with no animations , if you wan to make animations , just export animations later
